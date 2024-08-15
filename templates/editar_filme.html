@@ -27,27 +27,25 @@
         </nav>
     </header>
   <!-- Fim do Cabeçalho -->
-</br>
+  <section class="section1">
     <h2>Editar Filme</h2> <!-- Título principal da página -->
-  <center><br><br>
+  </section>
+  <center>
     <form action="/editar_filme/{{ filme[0] }}" method="POST"> <!-- Formulário para editar um filme. O 'action' indica para onde os dados do formulário serão enviados e o 'method' indica o método HTTP usado (neste caso, POST) -->
-    <div class="coolinput">
+    <div class="form1">
         <label for="nomefilme" class="text">Nome do Filme:</label> <!-- Rótulo e campo de entrada para o nome do filme -->
         <input type="text" placeholder="Insira o nome do filme aqui." id="nomefilme" name="nome" value = "{{filme[1]}}" class="input" required> <!-- Campo de entrada para o nome do filme -->
     </div>
-    <div class="coolinput">
+    <div class="form2">
         <label for="datafilme" class="text">Data de Lançamento:</label>
         <input type="date" placeholder="Insira a data de lançamento aqui." id="datafilme" name="data" value = "{{filme[2]}}" class="input">
     </div>
-    <div class="coolinput">
+    <div class="form3">
         <label for="produtor" class="text">Produtor/Diretor do Filme:</label>
         <input type="text" placeholder="Insira o produtor/diretor do filme aqui." id="produtor" name="produtor" value = "{{filme[3]}}" class="input">
     </div>
         <br><br>
-        <button class="botcal" type="submit" value="Adicionar"><span>Adicionar</span></button><br><br>
-        </form>
-        </br></br>
-        <button class="botcal" type="submit" value="Salvar"><span>Salvar</span></button><br><br>
+        <button class="bot" type="submit" value="Adicionar"><span>Salvar</span></button><br><br>
     </form>
   </center>
 </body>
